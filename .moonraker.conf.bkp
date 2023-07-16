@@ -114,3 +114,18 @@ env = /home/biqu/mobileraker-env/bin/python
 requirements = scripts/mobileraker-requirements.txt
 install_script = scripts/install-mobileraker-companion.sh
 
+[update_manager octoeverywhere]
+type = git_repo
+channel = beta
+path = /home/biqu/octoeverywhere
+origin = https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere.git
+env = /home/biqu/octoeverywhere-env/bin/python
+requirements = requirements.txt
+install_script = install.sh
+managed_services = 
+	octoeverywhere
+
+[announcements]
+subscriptions = 
+	octoeverywhere
+
